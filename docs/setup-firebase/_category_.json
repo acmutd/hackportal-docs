@@ -1,0 +1,8 @@
+{
+  "label": "Setup - Firebase",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This section will guide you through the process of setting up Firebase for your project. You will need to create a Firebase project and configure it to work with your app."
+  }
+}

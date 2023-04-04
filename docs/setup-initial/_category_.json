@@ -1,0 +1,8 @@
+{
+  "label": "Setup - Initial",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Initial setup of hackportal"
+  }
+}
