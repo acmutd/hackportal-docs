@@ -1,6 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
@@ -10,61 +8,43 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Initial Setup',
+    Svg: require('@site/static/img/setup.svg').default,
+    description: <>Clone the template repository and install the required dependencies.</>,
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'Firebase Setup',
+    Svg: require('@site/static/img/server.svg').default,
+    description: <>Setup your Firebase project and add the required configuration to your app.</>,
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Troubleshoot',
+    Svg: require('@site/static/img/troubleshoot.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        If you run into any issues, please check the troubleshooting section of the docs. If you
+        still can't find a solution, feel free to ask for help in the HackPortal HQ Discord server.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+    <div className="flex flex-col items-center justify-center w-full p-8 text-center">
+      <Svg className="w-[200px] h-[200px]" role="img" aria-label={title} />
+      <h3 className="text-2xl font-bold text-primaryDark dark:text-secondary">{title}</h3>
+      <p className="text-base text-primaryDark dark:text-secondary">{description}</p>
     </div>
   );
 }
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
+    <section className="flex flex-col md:flex-row items-center justify-center w-full bg-secondary dark:bg-docGray">
+      {FeatureList.map((props, idx) => (
+        <Feature key={idx} {...props} />
+      ))}
     </section>
   );
 }
