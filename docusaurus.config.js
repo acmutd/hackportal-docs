@@ -77,7 +77,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} HackPortal by ACM HackUTD. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HackPortal by HackUTD. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
