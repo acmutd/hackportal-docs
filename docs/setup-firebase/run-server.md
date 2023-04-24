@@ -17,4 +17,5 @@ The server will run on port 3000. You can access it by going to [http://localhos
 You have successfully set up your HackPortal. You can now start customizing it to your liking.
 
 ## Troubleshooting
-Please join our [Discord](https://discord.gg/2V8YXZ8) if you have any questions or issues.
+
+Please join our [Discord](https://discord.gg/2gkhwX5fdV) if you have any questions or issues.
