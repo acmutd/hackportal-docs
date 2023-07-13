@@ -1,0 +1,8 @@
+{
+  "label": "Troubleshooting",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "If you are having trouble with your installation, please check the troubleshooting section of the documentation, if you can't find a solution there, please join the discord server and ask for help."
+  }
+}
