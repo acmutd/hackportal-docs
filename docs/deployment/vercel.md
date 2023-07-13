@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Vercel
 
-Vercel is a cloud platform for static sites and Serverless Functions. We recommend using Vercel to deploy your project because HackPortal uses Next.js, a React framework made by Vercel.
+Vercel is a **FREE** cloud platform for static sites and Serverless Functions. We recommend using Vercel to deploy your project because HackPortal uses Next.js, a React framework made by Vercel.
 
 # Getting Started
 
@@ -12,7 +12,7 @@ Vercel is a cloud platform for static sites and Serverless Functions. We recomme
 
 2. Create a new project and link it to your desired git repository.
 
-3. Add the following environment variables for Firebase and the Resume Upload Service Account. You can either create a new Firbase Project for your production environment or use the same project as your development environment.
+3. Add the following environment variables for Firebase and the Resume Upload Service Account. You can either create a new Firbase Project for your production environment or use the same project as your development environment. (We recommend creating a new project)
 
 If you like to refer back to how to set up your Firebase project, please refer to the [Firebase Setup](/docs/category/setup-firebase) section.
 
